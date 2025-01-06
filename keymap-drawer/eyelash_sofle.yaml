@@ -77,7 +77,7 @@ layers:
   - F8
   - F9
   - F10
-  - Sft+Ctl+PRINTSCREEN
+  - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+$$mdi:apple-keyboard-shift$$
   - {t: '`', s: '~'}
   - $$mdi:mouse-left-click-outline$$
@@ -93,7 +93,7 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB5'
@@ -116,7 +116,7 @@ layers:
   - Ins
   - F11
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&key_repeat'
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
