@@ -47,14 +47,7 @@
         tap-ms = <30>;
     };
 
-    macros {
-        set: set {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "SET";
-        };
-    };
+  
 
     keymap {
         compatible = "zmk,keymap";
