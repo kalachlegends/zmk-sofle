@@ -78,7 +78,7 @@ layers:
   - F9
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
-  - Alt+$$mdi:apple-keyboard-shift$$
+  - {t: 'Sft+$$mdi:apple-keyboard-option$$', h: toggle}
   - {t: '`', s: '~'}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
