@@ -61,42 +61,42 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
   - CLCK
   layer1:
   - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+!
+  - Sft+@
+  - Sft+#
+  - Sft+$
+  - Sft+%
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+^
+  - Sft+&
+  - Sft+*
+  - Sft+(
+  - Sft+)
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-caps$$
   - {t: '-', s: _}
   - {t: '=', s: +}
   - '{'
   - '}'
-  - '&pipe'
+  - _
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - (
-  - )
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - '&pipe'
+  - '&map'
   - {t: '=', s: +}
+  - {t: '-', s: _}
+  - +
   - \
   - {t: '$$mdi:transfer$$', type: trans}
   - _
   - +
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - '&map'
+  - '&fn_ex'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -106,10 +106,10 @@ layers:
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '|'
-  - {t: <, h: toggle}
-  - '>'
+  - <
+  - Sft+>
+  - Sft+|
+  - '&fn_js'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mkp MB1'
   - '&mkp MB2'
@@ -146,9 +146,9 @@ layers:
   - $$mdi:keyboard-tab$$
   - Ctl+Sft+E
   - Sft+Alt+E
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+D
+  - Ctl+U
+  - PG UP
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -159,9 +159,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+A
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - N
+  - Sft+N
+  - PG DN
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
