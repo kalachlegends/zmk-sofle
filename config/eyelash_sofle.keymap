@@ -45,6 +45,22 @@
         tap-ms = <30>;
     };
 
+    macros {
+        pipe: pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE &kp GT>;
+            label = "PIPE";
+        };
+
+        map: map {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PRCNT &kp LEFT_BRACE>;
+            label = "MAP";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -53,7 +69,7 @@
 &kp ESC         &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8           &kp N9             &kp N0    &kp BACKSPACE
 &kp TAB         &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I            &kp O              &kp P     &kp LEFT_BRACKET
 &kp LEFT_SHIFT  &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K            &kp L              &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA        &kp DOT            &kp FSLH  &kp RIGHT_BRACKET
+&kp LCTRL       &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA        &kp DOT            &kp FSLH  &kp RIGHT_SHIFT
 &kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp ENTER  &mo 2   &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp CLCK
             >;
 
@@ -64,11 +80,11 @@
         layer_4 {
             display-name = "layer1";
             bindings = <
-&kp GRAVE     &kp F1                &kp F2                 &kp F3            &kp F4             &kp F5              &mmv MOVE_UP     &kp F6          &kp F7          &kp F8        &kp F9       &kp F10    &trans
-&kp CAPSLOCK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE            &mmv MOVE_DOWN   &kp UNDER       &kp MINUS       &kp PLUS      &kp PERCENT  &kp EQUAL  &kp NON_US_BACKSLASH
-&trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GREATER_THAN    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT    &kp COLON  &kp RIGHT_SHIFT
-&trans        &trans                &trans                 &kp PIPE          &kt GREATER_THAN   &kp LESS_THAN       &mmv MOVE_RIGHT  &mkp MB1        &mkp MB2        &kp F11       &kp F12      &kp HOME   &kp END
-&kp C_MUTE    &trans                &trans                 &trans            &trans             &trans              &mkp LCLK        &trans          &trans          &trans        &trans       &trans
+&kp GRAVE     &trans          &trans     &trans            &trans             &trans              &mmv MOVE_UP     &trans                &trans                 &trans            &trans             &trans     &trans
+&kp CAPSLOCK  &kp MINUS       &kp EQUAL  &kp LEFT_BRACE    &kp RIGHT_BRACE    &pipe               &mmv MOVE_DOWN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL  &kp NON_US_BACKSLASH
+&trans        &kp UNDERSCORE  &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &map                &mmv MOVE_LEFT   &kp LEFT_ARROW        &kp DOWN_ARROW         &kp UP_ARROW      &kp RIGHT          &kp COLON  &kp PIPE
+&trans        &trans          &trans     &kp PIPE          &kt LESS_THAN      &kp GREATER_THAN    &mmv MOVE_RIGHT  &mkp MB1              &mkp MB2               &kp HOME          &kp END            &trans     &kp RIGHT_SHIFT
+&kp C_MUTE    &trans          &trans     &trans            &trans             &trans              &mkp LCLK        &trans                &trans                 &trans            &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -76,11 +92,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &mmv MOVE_UP     &trans          &trans          &trans         &trans           &trans     &trans
-&kp TAB    &kp LC(LS(E))     &kp LS(LA(E))     &trans            &trans            &trans              &mmv MOVE_DOWN   &trans          &trans          &kt LC(LS(I))  &trans           &kp UNDER  &kp PLUS
-&trans     &kp LC(LS(A))     &trans            &trans            &trans            &trans              &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp LBRC   &kp RBRC
-&trans     &kp LC(Z)         &trans            &kp LC(C)         &kp LC(V)         &trans              &mmv MOVE_RIGHT  &trans          &kp LC(M)       &trans         &trans           &trans     &trans
-&trans     &trans            &trans            &trans            &trans            &trans              &mkp LCLK        &trans          &trans          &trans         &trans           &trans
+&kp TILDE  &kp F1         &kp F2         &kp F3     &kp F4     &kp F5    &mmv MOVE_UP     &kp F6          &kp F7          &kp F8         &kp F9           &kp F10    &kp F11
+&kp TAB    &kp LC(LS(E))  &kp LS(LA(E))  &trans     &trans     &trans    &mmv MOVE_DOWN   &trans          &trans          &kt LC(LS(I))  &trans           &kp UNDER  &kp F12
+&trans     &kp LC(LS(A))  &trans         &trans     &trans     &trans    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp LBRC   &kp RBRC
+&trans     &kp LC(Z)      &trans         &kp LC(C)  &kp LC(V)  &trans    &mmv MOVE_RIGHT  &trans          &kp LC(M)       &trans         &trans           &trans     &trans
+&trans     &trans         &trans         &trans     &trans     &trans    &mkp LCLK        &trans          &trans          &trans         &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
