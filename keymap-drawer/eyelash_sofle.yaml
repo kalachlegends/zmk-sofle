@@ -51,7 +51,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: ']', s: '}'}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
@@ -66,57 +66,57 @@ layers:
   - CLCK
   layer1:
   - {t: '`', s: '~'}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-caps$$
-  - (
-  - )
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - '{'
   - '}'
-  - '|'
+  - '&pipe'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - _
-  - {t: '-', s: _}
-  - +
-  - '%'
-  - {t: '=', s: +}
-  - \
-  - {t: '$$mdi:transfer$$', type: trans}
   - (
   - )
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - '>'
+  - {t: '=', s: +}
+  - \
+  - {t: '$$mdi:transfer$$', type: trans}
+  - _
+  - +
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - '&map'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - ':'
-  - $$mdi:apple-keyboard-shift$$
+  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '|'
-  - {t: '>', h: toggle}
-  - <
+  - {t: <, h: toggle}
+  - '>'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mkp MB1'
   - '&mkp MB2'
-  - F11
-  - F12
   - HOME
   - END
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -131,18 +131,18 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
   - '~'
-  - Gui+1
-  - Gui+2
-  - Gui+3
-  - Gui+4
-  - Gui+5
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
   - $$mdi:keyboard-tab$$
   - Ctl+Sft+E
   - Sft+Alt+E
@@ -155,7 +155,7 @@ layers:
   - {t: Ctl+Sft+I, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - _
-  - +
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+A
   - {t: '$$mdi:transfer$$', type: trans}
