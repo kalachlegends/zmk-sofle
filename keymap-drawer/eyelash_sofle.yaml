@@ -209,10 +209,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+PRINTSCREEN
   - Gui+$$mdi:keyboard-tab$$
-  - '&alt_tab_macro'
+  - Gui+$$mdi:arrow-left-bold$$
+  - Gui+$$mdi:arrow-down-bold$$
   - Gui+$$mdi:arrow-up-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+$$mdi:apple-keyboard-option$$
+  - Ctl+Gui+$$mdi:arrow-right-bold$$
   - Ctl+M
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -222,16 +222,16 @@ layers:
   - HOME
   - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+$$mdi:arrow-left-bold$$
-  - Gui+$$mdi:arrow-down-bold$$
-  - Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+M
+  - Ctl+$$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-right$$
+  - $$mdi:pan-down$$
   - $$mdi:pan-up$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
+  - $$mdi:pan-right$$
   - END
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
