@@ -146,7 +146,7 @@ layers:
   - Alt+$$mdi:keyboard-tab$$
   - Ctl+Sft+E
   - Sft+Alt+E
-  - Alt+Sft+E
+  - Alt+Sft+A
   - Ctl+U
   - PG UP
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
