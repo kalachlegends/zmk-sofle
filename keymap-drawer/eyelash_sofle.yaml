@@ -78,7 +78,7 @@ layers:
   - Sft+(
   - Sft+)
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: 'Alt+$$mdi:keyboard-tab$$', h: toggle}
+  - Alt+$$mdi:keyboard-tab$$
   - {t: '`', s: '~'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
@@ -107,7 +107,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '''', s: '"'}
   - \
-  - Sft+>
+  - {t: Sft+/, s: 'Sft+?'}
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   - '~'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -115,8 +115,8 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - Sft+<
   - Sft+>
-  - \
-  - +
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ;, s: ':'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -209,7 +209,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+PRINTSCREEN
   - Gui+$$mdi:keyboard-tab$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&alt_tab_macro'
   - Gui+$$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:apple-keyboard-option$$
@@ -225,8 +225,8 @@ layers:
   - Gui+$$mdi:arrow-left-bold$$
   - Gui+$$mdi:arrow-down-bold$$
   - Gui+$$mdi:arrow-right-bold$$
-  - Ctl+Gui+$$mdi:arrow-left-bold$$
-  - Ctl+Gui+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-up$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -237,6 +237,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Ctl+$$mdi:arrow-left-bold$$
+  - Gui+Ctl+$$mdi:arrow-right-bold$$
+  - $$mdi:pan-down$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -244,16 +247,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+L
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&windows_shutdown'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
