@@ -122,7 +122,7 @@
         layer_2 {
             bindings = <
 &kp TILDE    &kp F1         &kp F2         &kp F3         &kp F4     &kp F5       &mmv MOVE_UP     &kp F6              &kp F7              &kp F8            &kp F9               &kp F10    &trans
-&kp LA(TAB)  &kp LC(LS(E))  &kp LS(LA(E))  &kp LA(LS(E))  &kp LC(U)  &kp PG_UP    &mmv MOVE_DOWN   &kp LS(HOME)        &kp LS(END)         &kt HOME          &kp END              &kp UNDER  &kp EQUAL
+&kp LA(TAB)  &kp LC(LS(E))  &kp LS(LA(E))  &kp LA(LS(A))  &kp LC(U)  &kp PG_UP    &mmv MOVE_DOWN   &kp LS(HOME)        &kp LS(END)         &kt HOME          &kp END              &kp UNDER  &kp EQUAL
 &trans       &kp LC(LS(A))  &trans         &trans         &kp LS(N)  &kp PG_DN    &mmv MOVE_LEFT   &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &kp END    &kp PRINTSCREEN
 &trans       &kp LC(Z)      &kp LC(X)      &kp LC(C)      &kp LC(V)  &trans       &mmv MOVE_RIGHT  &mkp LCLK           &mkp RCLK           &trans            &trans               &kp F11    &kp F12
 &to 4        &trans         &trans         &trans         &trans     &trans       &mkp LCLK        &trans              &trans              &trans            &trans               &trans
