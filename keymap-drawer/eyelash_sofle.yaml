@@ -78,7 +78,7 @@ layers:
   - Sft+(
   - Sft+)
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: 'Gui+$$mdi:keyboard-tab$$', h: toggle}
+  - {t: 'Alt+$$mdi:keyboard-tab$$', h: toggle}
   - {t: '`', s: '~'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
@@ -106,7 +106,7 @@ layers:
   - '"'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '''', s: '"'}
-  - <
+  - \
   - Sft+>
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   - '~'
@@ -143,7 +143,7 @@ layers:
   - F9
   - F10
   - Ctl+Sft+PRINTSCREEN
-  - Gui+$$mdi:keyboard-tab$$
+  - Alt+$$mdi:keyboard-tab$$
   - Ctl+Sft+E
   - Sft+Alt+E
   - Alt+Sft+E
