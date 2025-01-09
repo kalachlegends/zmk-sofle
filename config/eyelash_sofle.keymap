@@ -95,11 +95,11 @@
         layer_1 {
             display-name = "layer1";
             bindings = <
-&trans       &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &mmv MOVE_UP     &kp LS(CARET)   &kp LS(AMPS)      &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)          &trans
-&kt LG(TAB)  &kp GRAVE     &kp LBKT       &kp RBKT       &kp LS(LBRC)  &kp LS(RBRC)     &mmv MOVE_DOWN   &kp LS(UNDER)   &kp LEFT_BRACKET  &kp LS(LBRC)  &kp EQUAL     &kp PLUS              &kp MINUS
-&trans       &pipe         &fn_ex         &map           &fn_js        &kp LS(PIPE)     &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW  &kp RIGHT     &kp COLON             &kp DOUBLE_QUOTES
-&trans       &kp SQT       &kp LESS_THAN  &kp LS(GT)     &kp LG(V)     &kp TILDE        &mmv MOVE_RIGHT  &mkp LCLK       &mkp RCLK         &kp LS(LT)    &kp LS(GT)    &kp NON_US_BACKSLASH  &kp PLUS
-&kp C_MUTE   &trans        &trans         &trans         &trans        &trans           &mkp LCLK        &trans          &trans            &trans        &trans        &trans
+&trans       &kp LS(EXCL)  &kp LS(AT)            &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &mmv MOVE_UP     &kp LS(CARET)   &kp LS(AMPS)      &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)          &trans
+&kt LA(TAB)  &kp GRAVE     &kp LBKT              &kp RBKT       &kp LS(LBRC)  &kp LS(RBRC)     &mmv MOVE_DOWN   &kp LS(UNDER)   &kp LEFT_BRACKET  &kp LS(LBRC)  &kp EQUAL     &kp PLUS              &kp MINUS
+&trans       &pipe         &fn_ex                &map           &fn_js        &kp LS(PIPE)     &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW  &kp RIGHT     &kp COLON             &kp DOUBLE_QUOTES
+&trans       &kp SQT       &kp NON_US_BACKSLASH  &kp LS(GT)     &kp LG(V)     &kp TILDE        &mmv MOVE_RIGHT  &mkp LCLK       &mkp RCLK         &kp LS(LT)    &kp LS(GT)    &kp NON_US_BACKSLASH  &kp PLUS
+&kp C_MUTE   &trans        &trans                &trans         &trans        &trans           &mkp LCLK        &trans          &trans            &trans        &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -108,7 +108,7 @@
         layer_2 {
             bindings = <
 &kp TILDE    &kp F1         &kp F2         &kp F3         &kp F4     &kp F5       &mmv MOVE_UP     &kp F6              &kp F7              &kp F8            &kp F9               &kp F10    &kp LC(RS(PRINTSCREEN))
-&kp LG(TAB)  &kp LC(LS(E))  &kp LS(LA(E))  &kp LA(LS(E))  &kp LC(U)  &kp PG_UP    &mmv MOVE_DOWN   &kp LS(HOME)        &kp LS(END)         &kt HOME          &kp END              &kp UNDER  &kp PLUS
+&kp LA(TAB)  &kp LC(LS(E))  &kp LS(LA(E))  &kp LA(LS(E))  &kp LC(U)  &kp PG_UP    &mmv MOVE_DOWN   &kp LS(HOME)        &kp LS(END)         &kt HOME          &kp END              &kp UNDER  &kp PLUS
 &trans       &kp LC(LS(A))  &trans         &trans         &kp LS(N)  &kp PG_DN    &mmv MOVE_LEFT   &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &kp END    &trans
 &trans       &kp LC(Z)      &trans         &kp LC(C)      &kp LC(V)  &trans       &mmv MOVE_RIGHT  &mkp LCLK           &mkp RCLK           &trans            &trans               &kp F11    &kp F12
 &to 4        &trans         &trans         &trans         &trans     &trans       &mkp LCLK        &trans              &trans              &trans            &trans               &trans
