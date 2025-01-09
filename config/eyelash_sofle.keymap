@@ -74,6 +74,20 @@
             bindings = <&kp MINUS &kp GT>;
             label = "FN_EX";
         };
+
+        alt_tab_macro: alt_tab_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_ALT &kp LEFT_GUI>;
+            label = "ALT_TAB_MACRO";
+        };
+
+        windows_shutdown: windows_shutdown {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X) &kp U &kp U>;
+            label = "WINDOWS_SHUTDOWN";
+        };
     };
 
     keymap {
@@ -95,10 +109,10 @@
         layer_1 {
             display-name = "layer1";
             bindings = <
-&trans       &kp LS(EXCL)  &kp LS(AT)            &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &mmv MOVE_UP     &kp LS(CARET)   &kp LS(AMPS)      &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)          &trans
-&kt LA(TAB)  &kp GRAVE     &kp LBKT              &kp RBKT       &kp LS(LBRC)  &kp LS(RBRC)     &mmv MOVE_DOWN   &kp LS(UNDER)   &kp LEFT_BRACKET  &kp LS(LBRC)  &kp EQUAL     &kp PLUS              &kp MINUS
-&trans       &pipe         &fn_ex                &map           &fn_js        &kp LS(PIPE)     &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW  &kp RIGHT     &kp COLON             &kp DOUBLE_QUOTES
-&trans       &kp SQT       &kp NON_US_BACKSLASH  &kp LS(GT)     &kp LG(V)     &kp TILDE        &mmv MOVE_RIGHT  &mkp LCLK       &mkp RCLK         &kp LS(LT)    &kp LS(GT)    &kp NON_US_BACKSLASH  &kp PLUS
+&trans       &kp LS(EXCL)  &kp LS(AT)            &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &mmv MOVE_UP     &kp LS(CARET)   &kp LS(AMPS)      &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &trans
+&kp LA(TAB)  &kp GRAVE     &kp LBKT              &kp RBKT       &kp LS(LBRC)  &kp LS(RBRC)     &mmv MOVE_DOWN   &kp LS(UNDER)   &kp LEFT_BRACKET  &kp LS(LBRC)  &kp EQUAL     &kp PLUS      &kp MINUS
+&trans       &pipe         &fn_ex                &map           &fn_js        &kp LS(PIPE)     &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW  &kp RIGHT     &kp COLON     &kp DOUBLE_QUOTES
+&trans       &kp SQT       &kp NON_US_BACKSLASH  &kp LS(SLASH)  &kp LG(V)     &kp TILDE        &mmv MOVE_RIGHT  &mkp LCLK       &mkp RCLK         &kp LS(LT)    &kp LS(GT)    &trans        &kp SEMICOLON
 &kp C_MUTE   &trans        &trans                &trans         &trans        &trans           &mkp LCLK        &trans          &kp SPACE         &trans        &trans        &trans
             >;
 
@@ -119,12 +133,14 @@
 
         layer_3 {
             bindings = <
-&trans       &kp LG(N1)    &kp LG(N2)    &kp LG(N3)     &kp LG(N4)              &kp LG(N5)                 &trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &trans    &kp LC(LS(PRINTSCREEN))
-&kp LG(TAB)  &trans        &kp LG(UP)    &trans         &kp LC(LEFT_ALT)        &kp LC(M)                  &trans  &trans      &trans      &trans      &trans      &kp HOME  &kp PG_UP
-&trans       &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(RIGHT)  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))    &trans  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp END   &kp PG_DN
-&trans       &trans        &trans        &trans         &trans                  &trans                     &trans  &trans      &trans      &trans      &trans      &trans    &trans
-&trans       &trans        &trans        &trans         &trans                  &trans                     &trans  &trans      &trans      &trans      &trans      &trans
+&trans       &kp LG(N1)      &kp LG(N2)    &kp LG(N3)              &kp LG(N4)               &kp LG(N5)        &trans             &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &trans    &kp LC(LS(PRINTSCREEN))
+&kp LG(TAB)  &alt_tab_macro  &kp LG(UP)    &trans                  &kp LC(LEFT_ALT)         &kp LC(M)         &trans             &trans      &trans      &trans      &trans      &kp HOME  &kp PG_UP
+&trans       &kp LG(LEFT)    &kp LG(DOWN)  &kp LG(RIGHT)           &trans                   &msc SCRL_UP      &trans             &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp END   &kp PG_DN
+&trans       &trans          &trans        &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &msc SCRL_DOWN    &trans             &trans      &trans      &trans      &trans      &trans    &trans
+&kp LG(L)    &trans          &trans        &trans                  &trans                   &trans            &windows_shutdown  &trans      &trans      &trans      &trans      &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         layer_4 {
