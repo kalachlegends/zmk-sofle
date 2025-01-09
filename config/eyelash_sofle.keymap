@@ -133,11 +133,11 @@
 
         layer_3 {
             bindings = <
-&trans       &kp LG(N1)      &kp LG(N2)    &kp LG(N3)              &kp LG(N4)               &kp LG(N5)        &trans             &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &trans    &kp LC(LS(PRINTSCREEN))
-&kp LG(TAB)  &alt_tab_macro  &kp LG(UP)    &trans                  &kp LC(LEFT_ALT)         &kp LC(M)         &trans             &trans      &trans      &trans      &trans      &kp HOME  &kp PG_UP
-&trans       &kp LG(LEFT)    &kp LG(DOWN)  &kp LG(RIGHT)           &trans                   &msc SCRL_UP      &trans             &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp END   &kp PG_DN
-&trans       &trans          &trans        &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &msc SCRL_DOWN    &trans             &trans      &trans      &trans      &trans      &trans    &trans
-&kp LG(L)    &trans          &trans        &trans                  &trans                   &trans            &windows_shutdown  &trans      &trans      &trans      &trans      &trans
+&trans       &kp LG(N1)    &kp LG(N2)          &kp LG(N3)              &kp LG(N4)               &kp LG(N5)          &trans             &kp LG(N6)       &kp LG(N7)      &kp LG(N8)    &kp LG(N9)       &trans    &kp LC(LS(PRINTSCREEN))
+&kp LG(TAB)  &kp LG(LEFT)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)        &kp LC(LG(RIGHT_ARROW))  &kp LC(M)           &trans             &trans           &trans          &trans        &trans           &kp HOME  &kp PG_UP
+&trans       &trans        &trans              &trans                  &kp LC(M)                &kp LC(LEFT_ALT)    &trans             &msc SCRL_RIGHT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp END   &kp PG_DN
+&trans       &trans        &trans              &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &msc SCRL_DOWN      &trans             &trans           &trans          &trans        &trans           &trans    &trans
+&kp LG(L)    &trans        &trans              &trans                  &trans                   &trans              &windows_shutdown  &trans           &trans          &trans        &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
