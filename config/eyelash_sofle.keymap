@@ -98,7 +98,7 @@
 &trans       &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &mmv MOVE_UP     &kp LS(CARET)   &kp LS(AMPS)      &kp LS(STAR)  &kp LS(LPAR)   &kp LS(RPAR)          &kp PLUS
 &kt LG(TAB)  &kp GRAVE     &kp LBKT       &kp RBKT       &kp LS(LBRC)  &kp LS(RBRC)     &mmv MOVE_DOWN   &kp LS(UNDER)   &kp LEFT_BRACKET  &kp LS(LBRC)  &kp EQUAL      &kp LS(DQT)           &kp MINUS
 &trans       &pipe         &fn_ex         &map           &fn_js        &kp LS(PIPE)     &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW  &kp RIGHT      &kp COLON             &kp SEMI
-&trans       &kp SQT       &kp LESS_THAN  &kp LS(GT)     &kp LG(V)     &kp LS(GT)       &mmv MOVE_RIGHT  &mkp LCLK       &mkp RCLK         &kp LS(LT)    &kp LS(GT)     &kp NON_US_BACKSLASH  &kp LS(PIPE)
+&trans       &kp SQT       &kp LESS_THAN  &kp LS(GT)     &kp LG(V)     &kp TILDE        &mmv MOVE_RIGHT  &mkp LCLK       &mkp RCLK         &kp LS(LT)    &kp LS(GT)     &kp NON_US_BACKSLASH  &kp LS(PIPE)
 &kp C_MUTE   &trans        &trans         &trans         &trans        &trans           &mkp LCLK        &trans          &trans            &trans        &kp BACKSPACE  &kp DELETE
             >;
 
