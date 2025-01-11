@@ -80,7 +80,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - '&fn_js'
   - '&pipe'
@@ -109,7 +109,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '{'
   - '}'
