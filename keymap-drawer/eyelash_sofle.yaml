@@ -80,10 +80,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - Sft+{
-  - Sft+}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:skip-next$$', h: toggle}
+  - '&fn_js'
+  - '&pipe'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
@@ -92,31 +92,31 @@ layers:
   - {t: '-', s: _}
   - +
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&pipe'
-  - '&fn_ex'
-  - '&map'
-  - '&fn_js'
-  - Sft+|
+  - {t: 'Sft+[', s: 'Sft+{'}
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - {t: '=', h: toggle, s: +}
+  - _
+  - '|'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
+  - '"'
   - ':'
-  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '''', s: '"'}
-  - \
-  - {t: Sft+/, s: 'Sft+?'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - '~'
+  - BACK
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-right-click-outline$$
+  - '{'
+  - '}'
   - Sft+<
   - Sft+>
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ;, s: ':'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -125,7 +125,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -154,8 +154,8 @@ layers:
   - Sft+END
   - {t: HOME, h: toggle}
   - END
-  - _
-  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+A
   - {t: '$$mdi:transfer$$', type: trans}
@@ -168,7 +168,7 @@ layers:
   - Sft+$$mdi:arrow-up-bold$$
   - Sft+$$mdi:arrow-right-bold$$
   - END
-  - PRINTSCREEN
+  - Sft+PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Z
   - Ctl+X
