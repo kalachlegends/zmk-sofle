@@ -81,7 +81,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
   - Ctl+$$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&fn_ex'
   - '&fn_js'
   - '&pipe'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
