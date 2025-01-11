@@ -62,8 +62,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
   - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-caps$$
   - '3'
-  - CLCK
   layer1:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+!
@@ -78,15 +78,15 @@ layers:
   - Sft+(
   - Sft+)
   - {t: '$$mdi:transfer$$', type: trans}
-  - Alt+$$mdi:keyboard-tab$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - Sft+{
   - Sft+}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - Sft+{
   - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: Sft+-, s: Sft+_}
   - {t: '=', s: +}
   - {t: '-', s: _}
@@ -103,7 +103,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - ':'
-  - '"'
+  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '''', s: '"'}
   - \
@@ -125,7 +125,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -257,8 +257,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   '4':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
