@@ -53,7 +53,7 @@ layers:
   - {t: /, s: '?'}
   - {t: ']', s: '}'}
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: '2', h: toggle}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - layer1
@@ -92,8 +92,8 @@ layers:
   - {t: '-', s: _}
   - +
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: \, s: '|'}
+  - HOME
+  - END
   - {t: '=', s: +}
   - _
   - '|'
@@ -115,16 +115,16 @@ layers:
   - '}'
   - Sft+<
   - Sft+>
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+?
   - {t: \, s: '|'}
-  - $$mdi:volume-off$$
+  - Alt+Sft+E
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -142,20 +142,20 @@ layers:
   - F8
   - F9
   - F10
+  - F11
   - {t: '$$mdi:transfer$$', type: trans}
-  - Alt+$$mdi:keyboard-tab$$
   - Ctl+Sft+E
   - Sft+Alt+E
   - Alt+Sft+A
   - Ctl+U
-  - PG UP
+  - Sft+PRINTSCREEN
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Sft+HOME
   - Sft+END
   - {t: HOME, h: toggle}
   - END
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+A
   - {t: '$$mdi:transfer$$', type: trans}
@@ -168,7 +168,7 @@ layers:
   - Sft+$$mdi:arrow-up-bold$$
   - Sft+$$mdi:arrow-right-bold$$
   - END
-  - Sft+PRINTSCREEN
+  - Ctl+PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Z
   - Ctl+X
@@ -180,8 +180,8 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F11
-  - F12
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '4', h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
