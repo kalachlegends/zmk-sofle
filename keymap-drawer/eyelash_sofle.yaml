@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - Gui+$$mdi:keyboard-space$$
   - $$mdi:backspace-reverse-outline$$
-  - '3'
+  - '2'
   layer1:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+!
@@ -108,7 +108,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - '&map'
-  - '&with'
+  - CONTEXT MENU
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   - Ctl+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   '3':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gui+1, s: Gui+!}
@@ -259,7 +259,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   '4':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
