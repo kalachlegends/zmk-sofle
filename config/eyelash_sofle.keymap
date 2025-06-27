@@ -93,6 +93,13 @@
             bindings = <&kp LT &kp MINUS>;
             label = "WITH";
         };
+
+        t_with_win: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 2 &kp LEFT_WIN>;
+            label = "NEW_MACRO";
+        };
     };
 
     keymap {
@@ -126,11 +133,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &kp F1         &kp F2         &kp F3         &kp F4     &kp F5                 &mmv MOVE_UP     &kp F6              &kp F7              &kp F8            &kp F9               &kp F10  &kp F11
-&trans     &kp LC(LS(E))  &kp LS(LA(A))  &kp LA(LS(A))  &kp LC(U)  &kp LS(PRINTSCREEN)    &mmv MOVE_DOWN   &kp LC(PLUS)        &kp LS(END)         &kt HOME          &kp END              &trans   &kp F12
-&trans     &kp LC(LS(A))  &trans         &trans         &kp LS(N)  &kp PG_DN              &mmv MOVE_LEFT   &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &kp END  &kp LC(PRINTSCREEN)
-&trans     &kp LC(Z)      &kp LC(X)      &kp LC(C)      &kp LC(V)  &trans                 &mmv MOVE_RIGHT  &mkp LCLK           &mkp RCLK           &trans            &trans               &trans   &trans
-&to 4      &trans         &trans         &trans         &trans     &trans                 &mkp LCLK        &trans              &trans              &trans            &trans               &trans
+&kp TILDE  &kp F1         &kp F2         &kp F3         &kp F4     &kp F5                 &mmv MOVE_UP     &kp F6             &kp F7             &kp F8                 &kp F9              &kp F10  &kp F11
+&trans     &kp LC(LS(E))  &kp LS(LA(A))  &kp LA(LS(A))  &kp LC(U)  &kp LS(PRINTSCREEN)    &mmv MOVE_DOWN   &trans             &trans             &trans                 &trans              &trans   &kp F12
+&trans     &kp LC(LS(A))  &trans         &trans         &kp LS(N)  &kp PG_DN              &mmv MOVE_LEFT   &mt LEFT_WIN LEFT  &mt LEFT_WIN DOWN  &mt LEFT_WIN UP_ARROW  &mt LEFT_WIN RIGHT  &trans   &kp LC(PRINTSCREEN)
+&trans     &kp LC(Z)      &kp LC(X)      &kp LC(C)      &kp LC(V)  &trans                 &mmv MOVE_RIGHT  &trans             &trans             &trans                 &trans              &trans   &trans
+&to 4      &trans         &trans         &trans         &trans     &trans                 &mkp LCLK        &trans             &trans             &trans                 &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -165,6 +172,16 @@
 &kp EQUAL  &kp LS(A)     &kp LS(S)   &kp LS(D)      &kp LS(F)     &kp LS(G)        &trans  &kp LS(H)      &kp LS(J)     &kp LS(K)     &kp LS(L)     &kp LS(COLON)  &kp MINUS
 &trans     &kp LS(Z)     &kp LS(X)   &kp LS(C)      &kp LS(V)     &kp LS(B)        &trans  &kp LS(N)      &kp LS(M)     &kp LS(LT)    &kp LS(GT)    &kp LS(QMARK)  &trans
 &trans     &trans        &trans      &trans         &trans        &trans           &trans  &trans         &trans        &trans        &trans        &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
