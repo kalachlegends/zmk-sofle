@@ -64,7 +64,7 @@ layers:
   - '2'
   - Gui+$$mdi:keyboard-space$$
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: toggle}
+  - $$mdi:apple-keyboard-shift$$
   layer1:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+!
@@ -128,10 +128,10 @@ layers:
   - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
-  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
   - F3
@@ -151,7 +151,7 @@ layers:
   - Ctl+U
   - Sft+PRINTSCREEN
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: LEFT WIN, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -164,10 +164,10 @@ layers:
   - Sft+N
   - PG DN
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:arrow-left-bold$$', h: LEFT WIN}
-  - {t: '$$mdi:arrow-down-bold$$', h: LEFT WIN}
-  - {t: '$$mdi:arrow-up-bold$$', h: LEFT WIN}
-  - {t: '$$mdi:arrow-right-bold$$', h: LEFT WIN}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
