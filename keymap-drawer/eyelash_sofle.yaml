@@ -64,7 +64,7 @@ layers:
   - '2'
   - Gui+$$mdi:keyboard-space$$
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   layer1:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+!
@@ -128,7 +128,7 @@ layers:
   - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
   - {t: '$$mdi:transfer$$', type: trans}
@@ -151,7 +151,7 @@ layers:
   - Ctl+U
   - Sft+PRINTSCREEN
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: LEFT WIN, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -187,7 +187,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - LEFT WIN
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
