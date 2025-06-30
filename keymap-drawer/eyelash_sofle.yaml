@@ -127,8 +127,8 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
+  - APPLICATION
   - $$mdi:apple-keyboard-shift$$
-  - APP
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
   - {t: '$$mdi:transfer$$', type: trans}
