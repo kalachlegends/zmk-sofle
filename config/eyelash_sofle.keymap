@@ -140,11 +140,11 @@
 
         layer_2 {
             bindings = <
-&trans  &kp F1         &kp F2         &kp F3         &kp F4        &kp F5                 &mmv MOVE_UP     &kp F6          &kp F7          &kp F8        &kp F9           &kp F10  &kp F11
-&trans  &kp LC(LS(E))  &kp LS(LA(A))  &kp LA(LS(A))  &kp LC(U)     &kp LS(PRINTSCREEN)    &mmv MOVE_DOWN   &mkp LCLK       &mkp RCLK       &msc SCRL_UP  &msc SCRL_DOWN   &trans   &kp F12
-&trans  &kp LC(LS(A))  &trans         &trans         &kp LS(N)     &kp PG_DN              &mmv MOVE_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans   &kp LC(PRINTSCREEN)
-&trans  &kp LC(Z)      &kp LC(X)      &kp LC(C)      &kp LC(V)     &trans                 &mmv MOVE_RIGHT  &kp PAGE_UP     &kp PAGE_DOWN   &trans        &trans           &trans   &trans
-&to 4   &trans         &trans         &trans         &kp LEFT_WIN  &trans                 &mkp LCLK        &trans          &trans          &trans        &trans           &trans
+&trans  &kp F1         &kp F2         &kp F3         &kp F4        &kp F5                 &mmv MOVE_UP     &kp F6                &kp F7                &kp F8                &kp F9          &kp F10         &kp F11
+&trans  &kp LA(LS(A))  &kp LC(LS(E))  &kp LA(LS(D))  &kp LC(U)     &kp LS(PRINTSCREEN)    &mmv MOVE_DOWN   &kp LC(LA(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LC(LA(NUMBER_3))  &kp LA(LS(N5))  &kp LC(LA(N5))  &kp F12
+&trans  &kp LC(LS(A))  &kp LC(LS(S))  &trans         &kp LS(N)     &kp LS(LA(PLUS))       &mmv MOVE_LEFT   &kp LEFT              &kp DOWN              &kp UP                &kp RIGHT       &trans          &kp LC(PRINTSCREEN)
+&trans  &kp LC(Z)      &kp LC(X)      &kp LC(C)      &kp LC(V)     &kp LA(LS(MINUS))      &mmv MOVE_RIGHT  &kp PAGE_UP           &kp PAGE_DOWN         &trans                &trans          &trans          &trans
+&to 4   &trans         &trans         &trans         &kp LEFT_WIN  &trans                 &mkp LCLK        &trans                &trans                &trans                &trans          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
